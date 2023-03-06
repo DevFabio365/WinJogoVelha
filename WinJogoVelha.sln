@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinJogoVelha", "WinJogoVelha\WinJogoVelha.csproj", "{2C074FD3-FDE6-408F-82D4-24FAD465EB48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{216EB9FE-671C-4686-AD98-46DFE6A9E1A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C074FD3-FDE6-408F-82D4-24FAD465EB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C074FD3-FDE6-408F-82D4-24FAD465EB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C074FD3-FDE6-408F-82D4-24FAD465EB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C074FD3-FDE6-408F-82D4-24FAD465EB48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66B0AC5E-0152-416D-92E9-34CD22241FAF}
+	EndGlobalSection
+EndGlobal
