@@ -72,6 +72,8 @@ namespace WinJogoVelha
 
             Jogador.Clear();
             Posicao.Clear();
+
+            Array.Clear(board, 0, board.Length);
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -80,11 +82,17 @@ namespace WinJogoVelha
         }
 
         private void mudaJogador(string jogador, int posicao)
-        {
+        {            
             Jogador.Add(jogador);
             Posicao.Add(posicao);
 
             board[posicao] = jogador;
+
+            //Verifica se houve um vencedor
+            if (IsWin(JogadorAtual))
+            {
+                lblMensagem.Text = JogadorAtual + " venceu!";
+            }
 
             //Troca o caracter do jogador
             if (jogador == "X")
@@ -103,19 +111,12 @@ namespace WinJogoVelha
                 lblL3C1.Text != "_" & lblL3C3.Text != "_" & lblL3C3.Text != "_"
                 )
             {
-                lblMensagem.Text = "FIM DE JOGO";
-
+                lblMensagem.Text = "Fim de Jogo - Empate";
+                
                 for (int i = 0; i < Jogador.Count; i++)
                 {
                     lblResultado.Text += Jogador[i] + "|" + Posicao[i] + " - ";
                 }
-            }
-
-            //Verifica se houve um vencedor
-            
-            if (IsWin(JogadorAtual))
-            { 
-                lblMensagem.Text = JogadorAtual + " venceu!"; 
             }            
         }
 
@@ -152,7 +153,6 @@ namespace WinJogoVelha
             // Se nenhuma das condições acima for verdadeira, então o jogador não venceu
             return false;
         }
-
 
         private void lblL1C1_Click(object sender, EventArgs e)
         {
